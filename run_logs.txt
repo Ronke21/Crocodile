@@ -1,0 +1,13 @@
+Extract triplets to out/en
+Traceback (most recent call last):
+  File "/home/nlp/ronke21/crocodile/multicore_run.py", line 38, in <module>
+    trip_read = TripleDBReader(args.input_triples, args.language)
+  File "/home/nlp/ronke21/crocodile/utils/triplereader.py", line 79, in __init__
+    raw_response = sparql.response.read().decode("utf-8")
+AttributeError: 'SPARQLWrapper' object has no attribute 'response'
+Clean triplets to out_clean/en
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Traceback (most recent call last):
+  File "/home/nlp/ronke21/crocodile/add_filter_relations.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
